@@ -1,0 +1,83 @@
+.zup-home {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.zup-home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255,213,0,0.15), transparent 70%);
+  animation: pulse 6s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  from {transform: scale(1);} 
+  to {transform: scale(1.2);} 
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+.changing-word {
+  color: #FFD500;
+}
+
+.card-container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  width: 220px;
+  height: 220px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card.right:hover .flip-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FFD500;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+}
+
+.flip-front img {
+  max-width: 70%;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  padding: 1rem;
+  color: #fff;
+}
