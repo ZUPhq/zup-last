@@ -1,47 +1,42 @@
-import "./Newsletter.css";
+import { Link } from 'react-router-dom';
+import './Newsletter.css';
 
 export default function Newsletter() {
   return (
-    <section className="uui-page-padding-2 newsletter">
-      <div className="uui-container-large-2">
-        <article className="uui-padding-vertical-xlarge">
-          <h1 className="heading-2">Join our newsletter</h1>
-          <div className="w-layout-grid uui-footer08_top-wrapper">
-            <div className="uui-footer08_right-wrapper">
-              <div className="uui-footer08_heading">
-                Stay up to date so you can receive bonuses!
-              </div>
-
-              <form
-                className="uui-footer08_form"
-                action="https://formsubmit.co/contact@zup.digital"
-                method="POST"
-              >
-                <input
-                  className="uui-form_input w-input"
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  required
-                />
-                <input
-                  type="submit"
-                  value="Subscribe"
-                  className="uui-button-2 is-button-small w-button"
-                />
-              </form>
-
-              <div className="success-message w-form-done">
-                <div>Thank you for subscribing! You’ll receive bonuses when we launch 🚀</div>
-              </div>
-            </div>
+    <footer className="footer-section">
+      <div className="section-container">
+        <div className="newsletter-wrapper">
+          <h2 className="newsletter-heading">Join our newsletter</h2>
+          <p className="newsletter-subheading">Stay up to date so you can recieve bonuses!</p>
+          <form
+            className="newsletter-form"
+            action="https://formsubmit.co/contact@zup.digital"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div className="footer-socials">
+            <a href="#"><img src="/icon-facebook.svg" alt="Facebook" /> Facebook</a>
+            <a href="#"><img src="/icon-linkedin.svg" alt="LinkedIn" /> LinkedIn</a>
+            <a href="#"><img src="/icon-instagram.svg" alt="Instagram" /> Instagram</a>
           </div>
-        </article>
+        </div>
 
-        <div className="newsletter-copyright">
-          COPYRIGHT © 2024 ZUP! - ALL RIGHTS RESERVED.
+        <div className="footer-bottom">
+          <p className="footer-copyright">COPYRIGHT © 2024 ZUP! - ALL RIGHTS RESERVED.</p>
+          <div className="footer-links">
+            <Link to="/dispatch/terms">Terms</Link>
+            <Link to="/dispatch/privacy">Privacy</Link>
+            <a href="#">Cookies</a>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
