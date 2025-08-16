@@ -37,6 +37,10 @@
   flex-wrap: wrap;
 }
 
+.card-link {
+  display: inline-block;
+}
+
 .flip-card {
   width: 220px;
   height: 220px;
