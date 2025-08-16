@@ -12,7 +12,11 @@ export default function Newsletter() {
                 Stay up to date so you can receive bonuses!
               </div>
 
-              <form className="uui-footer08_form">
+              <form
+                className="uui-footer08_form"
+                action="https://formsubmit.co/contact@zup.digital"
+                method="POST"
+              >
                 <input
                   className="uui-form_input w-input"
                   type="email"
