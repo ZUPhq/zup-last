@@ -1,28 +1,47 @@
-import "./Features.css";
+// src/pages/dispatch/Features/Features.tsx
+import './Features.css';
+
+const features = [
+  {
+    icon: "/icon-medal.png", // Assuming icon paths
+    title: "Professional drivers only",
+    description: "All ZUP! drivers meet strict standards: certified, experienced, and background-checked for your safety and comfort.",
+  },
+  {
+    icon: "/icon-feedback.png",
+    title: "Feedback and driver ranking system",
+    description: "Every ride matters. Rate your driver and help us keep the best at the top for a better, smarter taxi experience.",
+  },
+  {
+    icon: "/icon-kinder.png",
+    title: "Kinder Drive & Health Care rides",
+    description: "Special services for children and seniors, with hand-picked drivers and extra safety layers because care comes first.",
+  },
+  {
+    icon: "/icon-modern.png",
+    title: "Modern design, no legacy dispatcher calls",
+    description: "No more clunky dispatcher calls. ZUP! offers a clean, intuitive app experience. Just tap, ride, and go.",
+  },
+];
 
 export default function Features() {
   return (
-    <section className="f-section-large">
-      <div className="f-container-regular">
-        <div className="f-margin-bottom-64">
-          <div className="f-title-wrapper-center-2">
-            <div className="f-margin-bottom-49">
-              <h3 className="f-h3-heading-2">WHY CHOOSE ZUP! Dispatch?</h3>
-            </div>
-            <p className="f-paragraph-large">
-              ZUP! is Romania’s first modern taxi dispatch platform — built for speed, safety, and full transparency. We connect real taxis with real people, no ridesharing noise.
-            </p>
-          </div>
+    <section className="features-section">
+      <div className="section-container">
+        <div className="features-title-wrapper">
+          <h2 className="features-heading">WHY CHOOSE ZUP! Dispatch?</h2>
+          <p className="features-subheading">
+            ZUP! is Romania’s first modern taxi dispatch platform — built for speed, safety, and full transparency. We connect real taxis with real people, no ridesharing noise.
+          </p>
         </div>
-
-        <div className="f-feature-card-row">
+        <div className="features-grid">
           {features.map((feature, index) => (
-            <div className="div-block-4" key={index}>
-              <div className="f-feature-icon-wrapper">
-                <img src={feature.icon} alt={feature.title} className="image-20" />
+            <div className="feature-card" key={index}>
+              <div className="feature-icon-wrapper">
+                <img src={feature.icon} alt={feature.title} className="feature-icon" />
               </div>
-              <h4 className="f-h4-heading">{feature.title}</h4>
-              <p className="f-paragraph-small">{feature.description}</p>
+              <h3 className="feature-title">{feature.title}</h3>
+              <p className="feature-description">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -30,26 +49,3 @@ export default function Features() {
     </section>
   );
 }
-
-const features = [
-  {
-    icon: "/icon-dispatch.png",
-    title: "Modern Dispatch System",
-    description: "Real-time connection between drivers and clients, fully digital and app-based.",
-  },
-  {
-    icon: "/icon-map.png",
-    title: "Nationwide Coverage",
-    description: "From Iași to Timișoara, we aim to connect all major cities in Romania.",
-  },
-  {
-    icon: "/icon-pricing.png",
-    title: "Transparent Pricing",
-    description: "No hidden fees. Prices are linked directly to taximeter rates.",
-  },
-  {
-    icon: "/icon-fleet.png",
-    title: "Fleet & Driver Tools",
-    description: "Analytics, management, and monitoring tools to grow your fleet smart.",
-  },
-];

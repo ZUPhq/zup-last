@@ -1,37 +1,24 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import Navbar from "../components/layout/Navbar/Navbar";
+import Newsletter from "../components/layout/Newsletter/Newsletter";
+import Hero from "./dispatch/Hero";
+import Cover from "./dispatch/Cover";
+import Why from "./dispatch/Why";
+import Features from "./dispatch/Features";
+import Tabs from "./dispatch/Tabs";
+import Comparison from "./dispatch/Comparison";
+import Logos from "./dispatch/Logos";
+import FAQ from "./dispatch/FAQ";
 import FlippingCard from '../components/FlippingCard'
 import '../styles/zup.css'
 import mediaLogo from '../assets/logos/logo_zup_media.png'
 import dispatchLogo from '../assets/logos/logo_zup_dispatch.png'
-
-const words = [
-  'platforms',
-  'brands',
-  'experiences',
-  'stories',
-  'interfaces',
-  'tools',
-  'campaigns',
-  'products'
-]
+import { Link } from 'react-router-dom'
 
 export default function ZupHome() {
-  const [index, setIndex] = useState(0)
-
-  useEffect(() => {
-    const id = setInterval(
-      () => setIndex((i) => (i + 1) % words.length),
-      2500
-    )
-    return () => clearInterval(id)
-  }, [])
-
   return (
-    <div className="zup-home">
-      <h1 className="hero-title">
-        We build <span className="changing-word">{words[index]}</span> that matter.
-      </h1>
+    <>
+      <Navbar />
+      <Hero />
       <div className="card-container">
         <Link to="/media" className="card-link">
           <FlippingCard
@@ -48,6 +35,14 @@ export default function ZupHome() {
           />
         </Link>
       </div>
-    </div>
-  )
+      <Cover />
+      <Why />
+      <Features />
+      <Tabs />
+      <Comparison />
+      <Logos />
+      <FAQ />
+      <Newsletter />
+    </>
+  );
 }

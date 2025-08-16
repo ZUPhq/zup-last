@@ -1,41 +1,31 @@
-import "./Cover.css";
+// src/pages/dispatch/Cover/Cover.tsx
+import './Cover.css';
 
 export default function Cover() {
   return (
-    <div className="walsh-container-2">
-      <div className="walsh-container-4">
-        <div className="walsh-rounded-box-banner">
-          <div className="walsh-inner-column-left">
-            <div className="walsh-quote-image-wrapper">
-              <img
-                src="/cover-animated.gif"
-                alt="Glowing animated path"
-                className="walsh-cover-image-2"
-                width="500"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div className="walsh-inner-column-center">
-            <div className="walsh-flex-tag">
-              <div className="walsh-title-tag">What is ZUP!?</div>
-            </div>
-
-            <p className="walsh-main-paragraph-2">
-              ZUP! is a modern dispatch platform that connects real taxis with real passengers — no hidden pricing, no outdated systems.<br /><br />
-              • Nationwide dispatch coverage<br />
-              • Instant booking via app<br />
-              • Transparent pricing linked to the taximeter<br />
-              • Fleet management & driver analytics
-            </p>
-
-            <a className="walsh-link-wrapper-2 w-inline-block" href="/about">
-              <div className="walsh-text-button">Learn more →</div>
-            </a>
-          </div>
+    <section className="cover-section">
+      <div className="section-container cover-container">
+        <div className="cover-split-left">
+          <img
+            src="/cover-animated.gif"
+            alt="Animated ZUP route"
+            className="cover-image"
+          />
+        </div>
+        <div className="cover-split-right">
+          <h2 className="cover-heading">What is ZUP!?</h2>
+          <p className="cover-paragraph">
+            ZUP! is a modern dispatch platform that connects real taxis with real passengers — no hidden pricing, no outdated systems.
+          </p>
+          <ul>
+            <li>Nationwide dispatch coverage</li>
+            <li>Instant booking via app</li>
+            <li>Transparent pricing linked to the taximeter</li>
+            <li>Fleet management & driver analytics</li>
+          </ul>
+          <a href="/about" className="cover-link">Learn more →</a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

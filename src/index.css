@@ -1,24 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Inter:wght@400;700&display=swap');
-
-html, body, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+/* src/index.css */
+:root {
+  --zup-yellow: #FFD500;
+  --zup-text-dark: #111;
+  --zup-text-light: #444;
+  --zup-background-light: #FFFFFF;
+  --zup-background-grey: #f9f9f9;
+  --zup-border-light: #eee;
 }
 
 body {
+  margin: 0;
   font-family: 'Inter', 'Fira Sans', sans-serif;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--zup-background-light);
+  color: var(--zup-text-dark);
 }
 
-/* generic utility classes */
-.text-accent {
-  color: #FFD500;
+* {
+  box-sizing: border-box;
 }
 
-.center {
+section {
+  width: 100%;
+  padding: 80px 5%;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,15 +1,14 @@
+// src/pages/dispatch/Home.tsx
 import Navbar from "../../components/layout/Navbar/Navbar";
-import Newsletter from "../../components/layout/Newsletter/Newsletter";
-
-
 import Hero from "./Hero";
 import Cover from "./Cover";
-import Why from "./Why";
 import Features from "./Features";
-import Tabs from "./Tabs";
-import Comparison from "./Comparison";
+import Tabs from "./Tabs"; // This is the 'Who is ZUP! for?' section now
+import Comparison from "./Comparison"; // This is the 'Awards' section now
 import Logos from "./Logos";
 import FAQ from "./FAQ";
+// Note: The newsletter is part of the 'Tabs' (WhoIsZupFor) section in the screenshot,
+// so the separate Newsletter component might not be needed on this page.
 
 export default function DispatchHome() {
   return (
@@ -17,13 +16,11 @@ export default function DispatchHome() {
       <Navbar />
       <Hero />
       <Cover />
-      <Why />
       <Features />
       <Tabs />
       <Comparison />
       <Logos />
       <FAQ />
-      <Newsletter />
     </>
   );
 }

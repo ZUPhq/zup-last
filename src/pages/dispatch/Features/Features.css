@@ -1,85 +1,61 @@
-.f-section-large {
-  padding: 92px 5%;
-  position: relative;
-  padding-top: 72px;
-  padding-bottom: 72px;
+/* src/pages/dispatch/Features/Features.css */
+.features-section {
+  background-color: var(--zup-background-light);
 }
 
-.f-container-regular {
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-
-.f-margin-bottom-64 {
+.features-title-wrapper {
+  text-align: center;
+  max-width: 700px;
   margin-bottom: 64px;
 }
 
-.f-title-wrapper-center-2 {
-  z-index: 5;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  position: relative;
-}
-
-.f-margin-bottom-49 {
+.features-heading {
+  font-size: 2.5rem;
   margin-bottom: 16px;
 }
 
-.f-h3-heading-2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #111;
-}
-
-.f-paragraph-large {
+.features-subheading {
   font-size: 1.1rem;
-  color: #444;
   line-height: 1.6;
+  color: var(--zup-text-light);
 }
 
-.f-feature-card-row {
+.features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 32px;
-  margin-top: 32px;
+  width: 100%;
 }
 
-.div-block-4 {
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+.feature-card {
   text-align: center;
+  padding: 24px;
 }
 
-.f-feature-icon-wrapper {
-  margin-bottom: 16px;
+.feature-icon-wrapper {
+  background-color: #f0f0f0;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
-.image-20 {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
+.feature-icon {
+  width: 48px;
+  height: 48px;
 }
 
-.f-h4-heading {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 8px;
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
-.f-paragraph-small {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.4;
+.feature-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--zup-text-light);
 }

@@ -1,61 +1,40 @@
-import { useState } from "react";
-import "./Tabs.css";
+// src/pages/dispatch/Tabs/Tabs.tsx
+import './Tabs.css';
 
-const tabs = [
+const roles = [
   {
-    id: "drivers",
+    icon: "/icon-taxi-driver.png",
     title: "Taxi Drivers & Fleet Owners",
-    icon: "/tab-icon-drivers.svg",
-    description:
-      "Get more rides, instant payments, and total control over your business whether you're an independent driver or managing a fleet.",
+    description: "Whether you drive solo or manage 50 cars, ZUP! gives you full control, more clients, and real-time payments. Simple, fair, and powerful.",
   },
   {
-    id: "passengers",
-    title: "Passengers & Clients",
-    icon: "/tab-icon-passengers.svg",
-    description:
-      "Book rides instantly, track your driver, and pay through the app. Transparent pricing and real taxis only.",
+    icon: "/icon-passengers.png",
+    title: "Urban Passengers",
+    description: "Safe, clean, and reliable rides with transparent prices. Book in seconds, ride with confidence.",
   },
   {
-    id: "cities",
-    title: "City Administrators",
-    icon: "/tab-icon-cities.svg",
-    description:
-      "Gain insights into transportation demand and optimize taxi regulation. Real-time fleet and route data.",
+    icon: "/icon-tourists.png",
+    title: "Tourists & Newcomers",
+    description: "Discover the city effortlessly with trusted drivers and curated routes via our 'New in Town' feature.",
   },
 ];
 
 export default function Tabs() {
-  const [activeTab, setActiveTab] = useState("drivers");
-
   return (
-    <section className="cf-feature-tabs-section">
-      <div className="cf-feature-tabs-wrapper">
-        <div className="cf-tabs">
-          <div className="cf-tabs-menu-2">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                className={`cf-tab-link ${activeTab === tab.id ? "active" : ""}`}
-                onClick={() => setActiveTab(tab.id)}
-              >
-                <div className="cf-tab-heading-contain">
-                  <img src={tab.icon} alt={tab.title} className="cf-tab-icon" />
-                  <h3 className="cf-tab-heading">{tab.title}</h3>
-                </div>
-              </button>
-            ))}
-          </div>
-
-          <div className="cf-tab-content">
-            {tabs.map((tab) =>
-              activeTab === tab.id ? (
-                <div key={tab.id} className="cf-tab-panel">
-                  <p className="cf-tab-description">{tab.description}</p>
-                </div>
-              ) : null
-            )}
-          </div>
+    <section className="who-is-for-section">
+      <div className="section-container">
+        <div className="who-is-for-title-wrapper">
+          <p className="who-is-for-tagline">MADE FOR BOTH SIDES OF THE TAXI MARKET</p>
+          <h2 className="who-is-for-heading">WHO IS ZUP! FOR?</h2>
+        </div>
+        <div className="who-is-for-grid">
+          {roles.map((role, index) => (
+            <div className="who-is-for-card" key={index}>
+              <img src={role.icon} alt="" className="who-is-for-icon" />
+              <h3 className="who-is-for-title">{role.title}</h3>
+              <p className="who-is-for-description">{role.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

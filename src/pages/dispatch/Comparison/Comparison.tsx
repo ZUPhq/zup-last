@@ -1,47 +1,34 @@
-import { useState } from "react";
-import "./Comparison.css";
+// src/pages/dispatch/Comparison/Comparison.tsx
+import './Comparison.css';
 
-const tabs = [
-  {
-    id: "conaf",
-    image: "/award-conaf.svg",
-    label: "2nd Place @ CONAF 2024",
-  },
-  {
-    id: "rubikhub",
-    image: "/award-rubikhub.svg",
-    label: "RubikEDU Top Startup",
-  },
-  {
-    id: "startarium",
-    image: "/award-startarium.svg",
-    label: "Finalist Startarium 2024",
-  },
+const awards = [
+  { id: "01", text: "2nd Place @ CONAF 2024" },
+  { id: "02", text: "3rd Place Arena Urșilor (Pro Afaceri România)" },
+  { id: "03", text: "Finalist @ Early Innovators" },
+  { id: "04", text: "Finalist Citi Cluster by Glovo" },
+  { id: "05", text: "Validated by Vlad Gliga" },
 ];
 
 export default function Comparison() {
-  const [activeTab, setActiveTab] = useState("conaf");
-
   return (
-    <section className="cf-different-section">
-      <div className="cf-wrapper-1160 different-flex">
-        <div className="cf-different-upper-container">
-          <h2 className="cf-h2-heading-56px">Trusted. Awarded. Ready for scale.</h2>
-        </div>
-
-        <div className="cf-different-bottom-container">
-          <div className="cf-different-menu">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                className={`cf-different-tab-link ${activeTab === tab.id ? "active" : ""}`}
-                onClick={() => setActiveTab(tab.id)}
-              >
-                <img src={tab.image} alt={tab.label} className="cf-different-tab-image" />
-                <div>{tab.label}</div>
-              </button>
+    <section className="awards-section">
+      <div className="section-container awards-container">
+        <div className="awards-split-left">
+          <h2 className="awards-heading">Trusted. Awarded. Ready for scale.</h2>
+          <ul className="awards-list">
+            {awards.map(award => (
+              <li key={award.id}>
+                <span>{award.id}</span> {award.text}
+              </li>
             ))}
-          </div>
+          </ul>
+        </div>
+        <div className="awards-split-right">
+          <h3 className="endorsement-heading">Endorsed by one of Romania's top startup leaders</h3>
+          <p className="endorsement-paragraph">
+            ZUP! received direct validation from Vlad Gliga, a key figure in the Romanian innovation ecosystem, backing our mission and execution.
+          </p>
+          <img src="/team-photo.jpg" alt="ZUP! Team" className="endorsement-image" />
         </div>
       </div>
     </section>

@@ -1,84 +1,51 @@
-.hero-heading-center-2 {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    -webkit-text-fill-color: inherit;
-    object-fit: fill;
-    background-color: transparent;
-    background-clip: border-box;
-    border: 0 solid transparent;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 30px 72px;
-    display: flex;
-    position: relative;
+/* src/pages/dispatch/Hero/Hero.css */
+.hero-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.container-4 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1140px;
+  flex-wrap: wrap;
 }
 
-.hero-wrapper-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 100%;
+.hero-split-left {
+  max-width: 500px;
+  text-align: left;
 }
 
-.hero-split-2 {
-    max-width: 460px;
+.hero-heading {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
-.heading-copy {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-    line-height: 1.2;
+.hero-paragraph {
+  font-size: 1.1rem;
+  color: var(--zup-text-light);
+  margin-bottom: 32px;
 }
 
-.margin-bottom-24px-2 {
-    margin-bottom: 24px;
-    color: #666;
-    font-size: 1.1rem;
+.hero-buttons {
+  display: flex;
+  gap: 16px;
 }
 
-.uui-button-row-5 {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+.hero-buttons img {
+  height: 48px;
 }
 
-.uui-button-wrapper-4 {
-    display: flex;
+.hero-split-right {
+  max-width: 320px;
 }
 
-.link-block {
-    display: inline-block;
-}
-
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-
-.hero-phone-wrapper {
-    max-width: 320px;
-    width: 100%;
-}
-
-.phone-mockup {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 32px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
+.hero-phone-mockup {
+  width: 100%;
+  height: auto;
 }
