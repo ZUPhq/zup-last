@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import FlippingCard from '../components/FlippingCard'
 import '../styles/zup.css'
 import mediaLogo from '../assets/logos/logo_zup_media.png'
@@ -32,16 +33,20 @@ export default function ZupHome() {
         We build <span className="changing-word">{words[index]}</span> that matter.
       </h1>
       <div className="card-container">
-        <FlippingCard
-          front={<img src={mediaLogo} alt="ZUP! MEDIA" />}
-          back={<span>Marketing that converts. For brands that matter.</span>}
-          direction="left"
-        />
-        <FlippingCard
-          front={<img src={dispatchLogo} alt="ZUP! DISPATCH" />}
-          back={<span>One app. All taxis. Across Romania.</span>}
-          direction="right"
-        />
+        <Link to="/media" className="card-link">
+          <FlippingCard
+            front={<img src={mediaLogo} alt="ZUP! MEDIA" />}
+            back={<span>Marketing that converts. For brands that matter.</span>}
+            direction="left"
+          />
+        </Link>
+        <Link to="/dispatch" className="card-link">
+          <FlippingCard
+            front={<img src={dispatchLogo} alt="ZUP! DISPATCH" />}
+            back={<span>One app. All taxis. Across Romania.</span>}
+            direction="right"
+          />
+        </Link>
       </div>
     </div>
   )
