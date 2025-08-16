@@ -1,15 +1,20 @@
 .hero-heading-center-2 {
-    display: flex;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    -webkit-text-fill-color: inherit;
+    object-fit: fill;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
-    flex-flow: row;
     padding: 80px 30px 72px;
+    display: flex;
     position: relative;
-    background-color: transparent;
 }
 
 .container-4 {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -17,15 +22,16 @@
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
 .hero-wrapper-2 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    gap: 32px;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
 }
 
 .hero-split-2 {

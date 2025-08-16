@@ -1,0 +1,101 @@
+.navbar-logo-center {
+    border: 0 solid transparent;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.navbar-logo-center-container {
+    z-index: 5;
+    background-color: transparent;
+    width: 1030px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.navbar-logo-center-container.shadow-three {
+    border: 1px solid #fff;
+    width: 100%;
+    max-width: 1140px;
+    padding-bottom: 0;
+}
+
+.shadow-three {
+    border: 1px solid #fff;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.container-9 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-wrapper-three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+}
+
+.navbar-brand-three {
+    display: flex;
+    align-items: center;
+}
+
+.image-3 {
+    height: 40px;
+    width: auto;
+}
+
+.nav-menu-wrapper-three {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.w-nav-menu {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-menu-two {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.nav-link:hover {
+    background: #f0f0f0;
+}
+
+.menu-button {
+    display: none; /* ascuns până facem meniu responsive */
+}
+
+.w-icon-nav-menu {
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+}

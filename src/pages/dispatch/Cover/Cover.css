@@ -1,0 +1,97 @@
+.walsh-container-2 {
+  z-index: 2;
+  width: 100%;
+  max-width: 1480px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.walsh-container-4 {
+  z-index: 2;
+  width: 100%;
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.walsh-rounded-box-banner {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.walsh-inner-column-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.walsh-quote-image-wrapper {
+  max-width: 500px;
+}
+
+.walsh-cover-image-2 {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.walsh-inner-column-center {
+  flex: 1;
+  text-align: left;
+  max-width: 600px;
+}
+
+.walsh-flex-tag {
+  margin-bottom: 16px;
+}
+
+.walsh-title-tag {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.walsh-main-paragraph-2 {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.walsh-link-wrapper-2 {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.walsh-text-button {
+  font-weight: 600;
+  color: #22c55e;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.walsh-text-button:hover {
+  color: #16a34a;
+}

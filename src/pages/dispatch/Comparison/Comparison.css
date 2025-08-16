@@ -1,0 +1,77 @@
+.cf-different-section {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.cf-wrapper-1160 {
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.cf-wrapper-1160.different-flex {
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.cf-different-upper-container {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.cf-h2-heading-56px {
+  color: #000;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.cf-different-bottom-container {
+  width: 100%;
+}
+
+.cf-different-menu {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cf-different-tab-link {
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.cf-different-tab-link:hover {
+  border-color: #22c55e;
+}
+
+.cf-different-tab-link.active {
+  border-color: #22c55e;
+  background-color: #e6fcef;
+}
+
+.cf-different-tab-image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}

@@ -1,0 +1,95 @@
+.cf-feature-tabs-section {
+  width: 100%;
+}
+
+.cf-feature-tabs-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.cf-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+.cf-tabs-menu-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cf-tab-link {
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  flex: 1 1 280px;
+}
+
+.cf-tab-link.active {
+  border-color: #22c55e;
+  background-color: #e6fcef;
+}
+
+.cf-tab-heading-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.cf-tab-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.cf-tab-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+}
+
+.cf-tab-content {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.cf-tab-panel {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.cf-tab-description {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

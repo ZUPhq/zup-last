@@ -1,0 +1,108 @@
+.cf-faq-section-1 {
+  position: relative;
+}
+
+.cf-faq-main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cf-faqs-text-wrap {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cf-h2-heading.left {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.cf-faq-paragraph {
+  font-size: 1rem;
+  color: #555;
+}
+
+.cf-faq-bold-text {
+  font-weight: 600;
+  margin-top: 16px;
+  color: #222;
+}
+
+.cf-call-button._24px-bold.w-inline-block {
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.cf-gradient-span {
+  background: linear-gradient(to right, #22c55e, #16a34a);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.2s ease-in-out;
+}
+
+.cf-gradient-span:hover {
+  background: linear-gradient(to right, #16a34a, #15803d);
+}
+
+.cf-faqs-wrapper {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cf-faq-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.cf-faq-question-container-2 {
+  cursor: pointer;
+}
+
+.cf-faq-question-wrapper-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cf-faq-questions {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111;
+}
+
+.cf-faq-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.cf-faq-answer-wrap {
+  margin-top: 12px;
+}
+
+.cf-faq-answer-text {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
