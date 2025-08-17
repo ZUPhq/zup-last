@@ -1,31 +1,30 @@
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
-import Navbar from "../components/layout/Navbar/Navbar";
-import Footer from '../components/layout/Footer'; // Use the new Footer
+import Navbar from "../components/layout/Navbar";
+import Footer from '../components/layout/Footer';
 import FlippingCard from '../components/FlippingCard';
-import { Spotlight } from '../components/ui/Spotlight'; // Import the new Spotlight
+import { Spotlight } from '../components/ui/Spotlight';
 import '../styles/zup.css';
 import mediaLogo from '../assets/logos/logo_zup_media.png';
 import dispatchLogo from '../assets/logos/logo_zup_dispatch.png';
-import { cn } from '../lib/utils'; // Import the cn utility
 
 export default function ZupHome() {
   return (
-    <>
+    // The main container now uses a dark background and flexbox for centering
+    <div className="min-h-screen w-full bg-black flex flex-col">
       <Navbar />
-      {/* Main container for the spotlight effect */}
-      <div className="relative h-screen w-full overflow-hidden bg-white flex flex-col items-center justify-center">
+      
+      {/* Spotlight container */}
+      <div className="flex-grow w-full overflow-hidden bg-black/[0.96] flex flex-col items-center justify-center relative">
         
-        {/* Spotlight Component */}
         <Spotlight
           className="-top-40 left-0 md:-top-20 md:left-60"
-          fill="yellow" // Using a yellow spotlight to match your brand
+          fill="white" // White spotlight looks better on a dark background
         />
         
-        {/* Your Existing Content */}
         <div className="z-10">
           <div className="zup-home">
-            <h1 className="hero-title">
+            <h1 className="hero-title text-white"> {/* Added text-white */}
               We build{' '}
               <TypeAnimation
                 sequence={[
@@ -61,6 +60,6 @@ export default function ZupHome() {
 
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
