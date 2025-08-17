@@ -8,11 +8,6 @@
   --zup-border-light: #eee;
 }
 
-#root {
-  position: relative; /* Added for positioning the background */
-  overflow: hidden;   /* Keeps the large gradient contained */
-}
-
 body {
   margin: 0;
   font-family: 'Inter', 'Fira Sans', sans-serif;
@@ -21,6 +16,34 @@ body {
   background-color: var(--zup-background-light);
   color: var(--zup-text-dark);
 }
+
+#root {
+  position: relative; /* Establishes a positioning context */
+  isolation: isolate; /* Prevents z-index issues with the pseudo-element */
+}
+
+/* Global Animated Background Effect */
+#root::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places it behind all content */
+  background: radial-gradient(circle at 50% 50%, rgba(255, 213, 0, 0.15), transparent 70%);
+  animation: move-light 20s ease-in-out infinite alternate;
+}
+
+@keyframes move-light {
+  from {
+    transform: translate(-20%, -20%) scale(1.5);
+  }
+  to {
+    transform: translate(20%, 20%) scale(1.5);
+  }
+}
+
 
 * {
   box-sizing: border-box;
