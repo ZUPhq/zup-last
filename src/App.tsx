@@ -11,14 +11,17 @@ export default function App() {
     <>
       <main>
         <Routes>
-          <Route path="/" element={<DispatchHome />} />
+          {/* Set ZupHome as the main landing page */}
+          <Route path="/" element={<ZupHome />} />
+
+          {/* Keep the other routes as they are */}
           <Route path="/dispatch" element={<DispatchHome />} />
           <Route path="/dispatch/about" element={<DispatchAbout />} />
           <Route path="/dispatch/privacy" element={<DispatchPrivacy />} />
           <Route path="/media" element={<MediaComingSoon />} />
-          <Route path="/home-original" element={<ZupHome />} />
-          {/* fallback: if you enter a wrong route, we take you "home" */}
-          <Route path="*" element={<DispatchHome />} />
+          
+          {/* Fallback route can still go to ZupHome */}
+          <Route path="*" element={<ZupHome />} />
         </Routes>
       </main>
     </>
