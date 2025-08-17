@@ -1,5 +1,5 @@
 import Navbar from '../../components/layout/Navbar';
-import Newsletter from '../../components/layout/Newsletter';
+import Newsletter from '../../components/layout/Footer';
 import '../../styles/media.css';
 
 export default function MediaComingSoon() {

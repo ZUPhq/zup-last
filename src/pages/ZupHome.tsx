@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation'; // Import the component
 import Navbar from "../components/layout/Navbar/Navbar";
-import Newsletter from "../components/layout/Newsletter/Newsletter";
+import Newsletter from "../components/layout/Footer/Footer";
 import FlippingCard from '../components/FlippingCard';
 import '../styles/zup.css';
 import mediaLogo from '../assets/logos/logo_zup_media.png';

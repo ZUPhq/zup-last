@@ -8,6 +8,11 @@
   --zup-border-light: #eee;
 }
 
+#root {
+  position: relative; /* Added for positioning the background */
+  overflow: hidden;   /* Keeps the large gradient contained */
+}
+
 body {
   margin: 0;
   font-family: 'Inter', 'Fira Sans', sans-serif;

@@ -1,0 +1,18 @@
+.background-light-beam {
+  content: '';
+  position: fixed; /* Use fixed to stay in viewport */
+  inset: -50%; /* Make it larger than the viewport */
+  background: radial-gradient(circle at 50% 50%, rgba(255, 213, 0, 0.15), transparent 70%);
+  animation: move-light 20s ease-in-out infinite alternate;
+  z-index: -1;
+  will-change: transform;
+}
+
+@keyframes move-light {
+  from {
+    transform: translate(-20%, -20%) scale(1);
+  }
+  to {
+    transform: translate(20%, 20%) scale(1.2);
+  }
+}
