@@ -1,0 +1,44 @@
+.legal-section {
+  padding: 80px 5%;
+  background-color: #fff;
+}
+
+.legal-container {
+  max-width: 1140px;
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 64px;
+  max-width: 800px;
+}
+
+.legal-title {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.legal-intro {
+  font-size: 1.1rem;
+  color: var(--zup-text-light);
+  line-height: 1.6;
+}
+
+.legal-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  width: 100%;
+  text-align: left;
+}
+
+.legal-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.legal-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--zup-text-light);
+}
