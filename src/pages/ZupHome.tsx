@@ -1,40 +1,44 @@
-import Navbar from "../components/layout/Navbar/Navbar"; // Correctly uses the shared Navbar
+import { Link } from 'react-router-dom';
+import { TypeAnimation } from 'react-type-animation'; // Import the component
+import Navbar from "../components/layout/Navbar/Navbar";
 import Newsletter from "../components/layout/Newsletter/Newsletter";
 import FlippingCard from '../components/FlippingCard';
 import '../styles/zup.css';
 import mediaLogo from '../assets/logos/logo_zup_media.png';
 import dispatchLogo from '../assets/logos/logo_zup_dispatch.png';
-import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-
-const words = [
-  'platforms',
-  'brands',
-  'experiences',
-  'stories',
-  'interfaces',
-  'tools',
-  'campaigns',
-  'products'
-];
 
 export default function ZupHome() {
-  const [index, setIndex] = useState(0)
-
-  useEffect(() => {
-    const id = setInterval(
-      () => setIndex((i) => (i + 1) % words.length),
-      2500
-    )
-    return () => clearInterval(id)
-  }, [])
-
   return (
     <>
       <Navbar />
       <div className="zup-home">
         <h1 className="hero-title">
-          We build <span className="changing-word">{words[index]}</span> that matter.
+          We build{' '}
+          <TypeAnimation
+            sequence={[
+              'platforms',
+              1500,
+              'brands',
+              1500,
+              'experiences',
+              1500,
+              'stories',
+              1500,
+              'interfaces',
+              1500,
+              'tools',
+              1500,
+              'campaigns',
+              1500,
+              'products',
+              1500,
+            ]}
+            wrapper="span"
+            speed={50}
+            className="changing-word"
+            repeat={Infinity}
+          />{' '}
+          that matter.
         </h1>
         <div className="card-container">
           <Link to="/media" className="card-link">

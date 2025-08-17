@@ -2,10 +2,15 @@
 .navbar-container {
   width: 100%;
   padding: 20px 5%;
-  background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
+
+  /* Glassmorphism Effect */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* The blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
 }
 
 .navbar-content {
@@ -18,7 +23,7 @@
 }
 
 .navbar-brand {
-  height: 40px;
+  height: 65px;
 }
 
 .navbar-logo {
@@ -26,7 +31,8 @@
   width: auto;
 }
 
-.nav-left, .nav-right {
+.nav-left,
+.nav-right {
   display: flex;
   gap: 32px;
   align-items: center;
