@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import Navbar from "../components/layout/Navbar";
 import Footer from '../components/layout/Footer';
-import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card"; // Import the new components
+import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import '../styles/zup.css';
 import mediaLogo from '../assets/logos/logo_zup_media.png';
 import dispatchLogo from '../assets/logos/logo_zup_dispatch.png';
@@ -13,6 +13,11 @@ export default function ZupHome() {
       <Navbar />
 
       <div className="flex-grow w-full flex flex-col items-center justify-center relative">
+
+        {/* New Dot Background */}
+        <div className="absolute inset-0 [background-size:20px_20px] [background-image:radial-gradient(#404040_1px,transparent_1px)]" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+
         <div className="z-10 p-4 text-center">
           <h1 className="hero-title text-white">
             We build{' '}
@@ -30,7 +35,6 @@ export default function ZupHome() {
             that matter.
           </h1>
 
-          {/* New 3D Card Implementation */}
           <div className="card-container">
             <Link to="/media">
               <CardContainer>
@@ -72,7 +76,6 @@ export default function ZupHome() {
               </CardContainer>
             </Link>
           </div>
-
         </div>
       </div>
       <Footer />
