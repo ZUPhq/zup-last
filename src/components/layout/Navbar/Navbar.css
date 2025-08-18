@@ -1,15 +1,18 @@
-/* src/components/layout/Navbar/Navbar.css */
 .navbar-container {
   width: 100%;
   padding: 20px 5%;
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.8);
+
+  /* Glassmorphism Effect */
+  background-color: transparent; /* Changed from rgba(255, 255, 255, 0.8) */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Adjusted border for dark bg */
 }
+
+/* src/components/layout/Navbar/Navbar.css */
 
 .navbar-content {
   width: 100%;

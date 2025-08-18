@@ -9,12 +9,10 @@ import dispatchLogo from '../assets/logos/logo_zup_dispatch.png';
 
 export default function ZupHome() {
   return (
-    <div className="min-h-screen w-full bg-black flex flex-col">
+    <div className="h-screen w-full bg-black flex flex-col">
       <Navbar />
 
       <div className="flex-grow w-full flex flex-col items-center justify-center relative">
-
-        {/* New Dot Background */}
         <div className="absolute inset-0 [background-size:20px_20px] [background-image:radial-gradient(#404040_1px,transparent_1px)]" />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
@@ -38,7 +36,7 @@ export default function ZupHome() {
           <div className="card-container">
             <Link to="/media">
               <CardContainer>
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-yellow-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card flex flex-col items-center justify-center dark:hover:shadow-2xl dark:hover:shadow-yellow-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[26rem] h-auto rounded-xl p-6 border">
                   <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
                     ZUP! Media
                   </CardItem>
@@ -48,7 +46,7 @@ export default function ZupHome() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={mediaLogo}
-                      className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
+                      className="h-52 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                       alt="ZUP! Media Logo"
                     />
                   </CardItem>
@@ -58,7 +56,7 @@ export default function ZupHome() {
 
             <Link to="/dispatch">
               <CardContainer>
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-yellow-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card flex flex-col items-center justify-center dark:hover:shadow-2xl dark:hover:shadow-yellow-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[26rem] h-auto rounded-xl p-6 border">
                   <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
                     ZUP! Dispatch
                   </CardItem>
@@ -68,7 +66,7 @@ export default function ZupHome() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={dispatchLogo}
-                      className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
+                      className="h-52 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                       alt="ZUP! Dispatch Logo"
                     />
                   </CardItem>

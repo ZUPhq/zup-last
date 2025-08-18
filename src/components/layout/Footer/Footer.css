@@ -1,16 +1,17 @@
 .footer-section {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* 3. Transparent glass effect */
+  background-color: transparent;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(222, 222, 222, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 32px 5%;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* This aligns items to the ends */
+  justify-content: space-between; /* Ensures left/right alignment */
   align-items: center;
-  width: 100%;                  /* This ensures the container spans the full width */
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   flex-wrap: wrap;
