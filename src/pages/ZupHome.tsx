@@ -11,11 +11,11 @@ import dispatchLogo from '../assets/logos/logo_zup_dispatch.png';
 export default function ZupHome() {
   return (
     // The main container now uses a dark background and flexbox for centering
-    <div className="min-h-screen w-full bg-black flex flex-col">
+    <div className="zup-home-conatiner">
       <Navbar />
       
       {/* Spotlight container */}
-      <div className="flex-grow w-full overflow-hidden bg-black/[0.96] flex flex-col items-center justify-center relative">
+      <div className="zup-home">
         
         <Spotlight
           className="-top-40 left-0 md:-top-20 md:left-60"
