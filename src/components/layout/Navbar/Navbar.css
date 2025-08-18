@@ -5,12 +5,10 @@
   position: sticky;
   top: 0;
   z-index: 100;
-
-  /* Glassmorphism Effect */
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* The blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar-content {
@@ -23,7 +21,7 @@
 }
 
 .navbar-brand {
-  height: 65px;
+  height: 80px; /* Increased from 65px */
 }
 
 .navbar-logo {

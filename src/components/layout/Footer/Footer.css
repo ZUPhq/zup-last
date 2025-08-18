@@ -1,17 +1,18 @@
 .footer-section {
-  /* Glassmorphism Effect */
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* The blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  border-top: 1px solid rgba(222, 222, 222, 0.5); /* Subtle border */
-
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(222, 222, 222, 0.5);
   padding: 32px 5%;
 }
 
 .footer-container {
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-between; /* This aligns items to the ends */
   align-items: center;
+  width: 100%;                  /* This ensures the container spans the full width */
+  max-width: 1140px;
+  margin: 0 auto;
   flex-wrap: wrap;
   gap: 20px;
 }

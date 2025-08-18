@@ -16,23 +16,7 @@
   align-items: center;
 }
 /* This ::before pseudo-element creates the light beam */
-.zup-home-container::before {
-  content: '';
-  position: absolute;
-  inset: -50%;
-  z-index: -1;
-  background: radial-gradient(circle at center, rgba(255, 213, 0, 0.15), transparent 70%);
-  animation: move-light 20s ease-in-out infinite alternate;
-}
 
-@keyframes move-light {
-  from {
-    transform: translate(-20%, -20%);
-  }
-  to {
-    transform: translate(20%, 20%);
-  }
-}
 
 .hero-title {
   font-size: clamp(2rem, 5vw, 4rem);
