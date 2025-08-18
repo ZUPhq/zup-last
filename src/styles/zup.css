@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  color: transparent;
 }
 .zup-home {
   position: relative;
@@ -83,3 +84,4 @@
   padding: 1rem;
   color: #fff;
 }
+
