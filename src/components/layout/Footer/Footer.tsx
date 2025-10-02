@@ -4,7 +4,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer className="footer-section">
-      <div className="section-container footer-container">
+      <div className="footer-container">
         <p className="footer-copyright">
           COPYRIGHT © {new Date().getFullYear()} ZUP! - ALL RIGHTS RESERVED.
         </p>
